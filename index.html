@@ -6,6 +6,40 @@
     <meta name="color-scheme" content="dark" />
     <meta name="description" content="THWIP - a first-person web-swinging flow-state game in a procedurally generated comic city. Zero assets, all code." />
     <meta name="theme-color" content="#0b0d14" />
+
+    <!--
+      Link preview cards. Absolute URLs are required here: crawlers resolve
+      these without a document base, so the relative `base` Vite builds with
+      would leave them pointing at nothing.
+
+      og.jpg is the one file the project ships that the game never loads. It
+      is fetched by crawlers only, so the zero-network-requests promise below
+      still holds at runtime.
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="THWIP" />
+    <meta property="og:url" content="https://ianmolagarwal.github.io/thwip/" />
+    <meta property="og:title" content="THWIP — a first-person web-swinging game" />
+    <meta
+      property="og:description"
+      content="Swing through a procedurally generated comic city. Hand-rolled swing physics, zero assets, 60fps in your browser."
+    />
+    <meta property="og:image" content="https://ianmolagarwal.github.io/thwip/og.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="A halftone-printed comic city skyline at sunset, seen from above the rooftops."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="THWIP — a first-person web-swinging game" />
+    <meta
+      name="twitter:description"
+      content="Swing through a procedurally generated comic city. Hand-rolled swing physics, zero assets, 60fps in your browser."
+    />
+    <meta name="twitter:image" content="https://ianmolagarwal.github.io/thwip/og.jpg" />
+
     <!-- Inline data URI: keeps the "zero network requests" promise honest. -->
     <link
       rel="icon"
