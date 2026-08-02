@@ -1,0 +1,13 @@
+{
+  "name": "thwip-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Electron wrapper for THWIP",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^43.0.0"
+  }
+}

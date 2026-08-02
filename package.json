@@ -1,0 +1,21 @@
+{
+  "name": "thwip",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "THWIP - a first-person web-swinging flow-state game in a procedural comic city",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "three": "^0.185.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.185.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
+  }
+}
